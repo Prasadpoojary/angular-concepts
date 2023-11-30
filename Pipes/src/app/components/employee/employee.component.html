@@ -1,0 +1,22 @@
+<div class="container">
+    <table border="1">
+        <thead>
+            <th>Employee ID</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Salary</th>
+            <th>DOB</th>
+            <th>Email</th>
+        </thead>
+        <tbody>
+           <tr *ngFor="let employee of employees" highlightMouse >
+               <td><input [ngClass]="{'editable' : showEdit}"  [readOnly]="!showEdit" type="text" value="{{employee.id}}"></td>
+               <td><input [ngClass]="{'editable' : showEdit}"  [readOnly]="!showEdit" type="text" value="{{employee.firstName}}"></td>
+               <td><input [ngClass]="{'editable' : showEdit}"  [readOnly]="!showEdit" type="text" value="{{employee.lastName}}"></td>
+               <td><input [ngClass]="{'editable' : showEdit}"  [readOnly]="!showEdit" type="text" value="{{employee.salary | currency}}"></td>
+               <td><input [ngClass]="{'editable' : showEdit}"  [readOnly]="!showEdit" type="text" value="{{employee.dob | date:'mediumDate' | uppercase}}"></td>
+               <td><input [ngClass]="{'editable' : showEdit}"  [readOnly]="!showEdit" type="text" value="{{employee.email}}"></td>
+           </tr>
+        </tbody>
+    </table>
+  </div>

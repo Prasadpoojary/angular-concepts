@@ -1,0 +1,54 @@
+.container
+{
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    top:100px;
+}
+
+table 
+{
+    border-collapse: collapse;
+
+}
+
+thead 
+{
+    background:#1e1e1e;
+    color:#fff;
+}
+
+th
+{
+    padding: 12px 20px;
+}
+
+tbody td 
+{
+    padding:5px 2px;
+    font-size: 13px;
+}
+
+
+td button
+{
+    padding:5px 15px;
+    outline: none;
+    border:none;
+    color:#fff;
+    background:#07b74d;
+    border-radius: 4px;
+}
+
+td input 
+{
+    border: none;
+    outline: none;
+    background:#ffffff00;
+}
+
+td input.editable 
+{
+    cursor: unset;
+    border:1px solid black;
+}
