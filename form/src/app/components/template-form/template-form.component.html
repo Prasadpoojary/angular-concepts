@@ -1,0 +1,31 @@
+<div class="container" >
+    <form #userForm="ngForm" (ngSubmit)="submitData(userForm)">
+        <div class="row-two">
+            <label>Full name</label>
+            <input type="text" name="fullname" ngModel>
+        </div>
+        <div class="row-two">
+            <label>Mobile number</label>
+            <input type="number"  name="mobile" ngModel>
+        </div>
+        <div class="row-two">
+            <label>E-mail</label>
+            <input type="text" name="email" ngModel>
+        </div>
+        <div class="row-two">
+            <label>Password</label>
+            <input type="text"  name="password" ngModel>
+        </div>
+        <div class="row-two">
+            <label>Confirm Password</label>
+            <input type="text" name="confirmPassword" ngModel>
+        </div>
+        <div class="row-three">
+            <button>Submit</button>
+        </div>
+    </form>
+</div>
+<hr>
+<div>
+<p>{{data | json}}</p>
+</div>
